@@ -7,3 +7,22 @@ export async function POST() {
     next: ["Test 3 variations"]
   });
 }
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <html>
+      <body style={{ fontFamily: "sans-serif" }}>
+        {children}
+      </body>
+    </html>
+  );
+}
+
+export default function Home() {
+  return (
+    <div style={{ padding: 40 }}>
+      <h1>AngleFinder</h1>
+      <p>Upload creatives. Find the winning angle.</p>
+    </div>
+  );
+}
